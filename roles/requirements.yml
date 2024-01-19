@@ -1,17 +1,10 @@
 roles:
 - name: thulium_drake.adjoin
   version: 1.2.1
-- name: ansible.utils
-- name: community.general
-- name: ansible.posix
-- name: kubernetes.core
+
 
 - src: https://github.com/metno/ansible-role-dns
   version: master
   name: dns
-
-- src: https://github.com/ansible-lockdown/UBUNTU22-CIS
-  version: devel
-  name: UBUNTU22-CIS
 
 
