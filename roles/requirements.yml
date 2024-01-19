@@ -10,6 +10,8 @@ roles:
   version: master
   name: dns
 
-
+- src: https://github.com/ansible-lockdown/UBUNTU22-CIS
+  version: devel
+  name: UBUNTU22-CIS
 
 
