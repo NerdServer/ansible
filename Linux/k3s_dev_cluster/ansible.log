@@ -1,0 +1,41 @@
+2024-01-19 18:07:54,626 p=2964 u=tannerru n=ansible | PLAY [k3s_cluster] **********************************************************************
+2024-01-19 18:07:54,634 p=2964 u=tannerru n=ansible | TASK [Gathering Facts] ******************************************************************
+2024-01-19 18:07:54,634 p=2964 u=tannerru n=ansible | Friday 19 January 2024  18:07:54 -0600 (0:00:00.009)       0:00:00.009 ******** 
+2024-01-19 18:07:59,563 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.31: Failed
+to connect to the host via ssh: Warning: Permanently added '10.0.40.31' (ED25519) to the
+list of known hosts.  tannerru@10.0.40.31: Permission denied (publickey).
+
+2024-01-19 18:07:59,729 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.22: Failed
+to connect to the host via ssh: Warning: Permanently added '10.0.40.22' (ED25519) to the
+list of known hosts.  tannerru@10.0.40.22: Permission denied (publickey).
+
+2024-01-19 18:07:59,751 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.21: Failed
+to connect to the host via ssh: Warning: Permanently added '10.0.40.21' (ED25519) to the
+list of known hosts.  tannerru@10.0.40.21: Permission denied (publickey).
+
+2024-01-19 18:08:04,635 p=2964 u=tannerru n=ansible | fatal: [10.0.40.31]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "10.0.40.31". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.31' (ED25519) to the list of known hosts.
+    tannerru@10.0.40.31: Permission denied (publickey).
+  unreachable: true
+2024-01-19 18:08:04,642 p=2964 u=tannerru n=ansible | fatal: [10.0.40.22]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "10.0.40.22". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.22' (ED25519) to the list of known hosts.
+    tannerru@10.0.40.22: Permission denied (publickey).
+  unreachable: true
+2024-01-19 18:08:04,692 p=2964 u=tannerru n=ansible | fatal: [10.0.40.21]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "10.0.40.21". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.21' (ED25519) to the list of known hosts.
+    tannerru@10.0.40.21: Permission denied (publickey).
+  unreachable: true
+2024-01-19 18:08:09,926 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.32: Failed
+to connect to the host via ssh: Warning: Permanently added '10.0.40.32' (ED25519) to the
+list of known hosts.  tannerru@10.0.40.32: Permission denied (publickey).
+
+2024-01-19 18:08:15,167 p=2964 u=tannerru n=ansible | fatal: [10.0.40.32]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "10.0.40.32". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.32' (ED25519) to the list of known hosts.
+    tannerru@10.0.40.32: Permission denied (publickey).
+  unreachable: true
+2024-01-19 18:08:18,138 p=2964 u=tannerru n=ansible |  [ERROR]: User interrupted execution
+
