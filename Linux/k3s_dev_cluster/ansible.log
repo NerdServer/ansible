@@ -39,3 +39,18 @@ list of known hosts.  tannerru@10.0.40.32: Permission denied (publickey).
   unreachable: true
 2024-01-19 18:08:18,138 p=2964 u=tannerru n=ansible |  [ERROR]: User interrupted execution
 
+2024-01-19 18:16:42,690 p=3206 u=tannerru n=ansible | PLAY [k3s_cluster] **********************************************************************
+2024-01-19 18:16:42,696 p=3206 u=tannerru n=ansible | TASK [Gathering Facts] ******************************************************************
+2024-01-19 18:16:42,696 p=3206 u=tannerru n=ansible | Friday 19 January 2024  18:16:42 -0600 (0:00:00.006)       0:00:00.006 ******** 
+2024-01-19 18:16:44,637 p=3206 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 18:16:44,664 p=3206 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 18:16:44,705 p=3206 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 18:16:46,362 p=3206 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 18:17:15,671 p=3206 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.30: Failed
+to connect to the host via ssh: ssh: connect to host 10.0.40.30 port 22: Network is
+unreachable
+
+2024-01-19 18:17:47,436 p=3206 u=tannerru n=ansible | fatal: [10.0.40.30]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "10.0.40.30". Make sure this host can be reached over ssh: ssh: connect to host 10.0.40.30 port 22: Network is unreachable
+  unreachable: true
