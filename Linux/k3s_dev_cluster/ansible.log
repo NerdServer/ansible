@@ -1,56 +1,913 @@
-2024-01-19 18:07:54,626 p=2964 u=tannerru n=ansible | PLAY [k3s_cluster] **********************************************************************
-2024-01-19 18:07:54,634 p=2964 u=tannerru n=ansible | TASK [Gathering Facts] ******************************************************************
-2024-01-19 18:07:54,634 p=2964 u=tannerru n=ansible | Friday 19 January 2024  18:07:54 -0600 (0:00:00.009)       0:00:00.009 ******** 
-2024-01-19 18:07:59,563 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.31: Failed
-to connect to the host via ssh: Warning: Permanently added '10.0.40.31' (ED25519) to the
-list of known hosts.  tannerru@10.0.40.31: Permission denied (publickey).
-
-2024-01-19 18:07:59,729 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.22: Failed
-to connect to the host via ssh: Warning: Permanently added '10.0.40.22' (ED25519) to the
-list of known hosts.  tannerru@10.0.40.22: Permission denied (publickey).
-
-2024-01-19 18:07:59,751 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.21: Failed
-to connect to the host via ssh: Warning: Permanently added '10.0.40.21' (ED25519) to the
-list of known hosts.  tannerru@10.0.40.21: Permission denied (publickey).
-
-2024-01-19 18:08:04,635 p=2964 u=tannerru n=ansible | fatal: [10.0.40.31]: UNREACHABLE! => changed=false 
-  msg: |-
-    Data could not be sent to remote host "10.0.40.31". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.31' (ED25519) to the list of known hosts.
-    tannerru@10.0.40.31: Permission denied (publickey).
-  unreachable: true
-2024-01-19 18:08:04,642 p=2964 u=tannerru n=ansible | fatal: [10.0.40.22]: UNREACHABLE! => changed=false 
-  msg: |-
-    Data could not be sent to remote host "10.0.40.22". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.22' (ED25519) to the list of known hosts.
-    tannerru@10.0.40.22: Permission denied (publickey).
-  unreachable: true
-2024-01-19 18:08:04,692 p=2964 u=tannerru n=ansible | fatal: [10.0.40.21]: UNREACHABLE! => changed=false 
-  msg: |-
-    Data could not be sent to remote host "10.0.40.21". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.21' (ED25519) to the list of known hosts.
-    tannerru@10.0.40.21: Permission denied (publickey).
-  unreachable: true
-2024-01-19 18:08:09,926 p=2964 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.32: Failed
-to connect to the host via ssh: Warning: Permanently added '10.0.40.32' (ED25519) to the
-list of known hosts.  tannerru@10.0.40.32: Permission denied (publickey).
-
-2024-01-19 18:08:15,167 p=2964 u=tannerru n=ansible | fatal: [10.0.40.32]: UNREACHABLE! => changed=false 
-  msg: |-
-    Data could not be sent to remote host "10.0.40.32". Make sure this host can be reached over ssh: Warning: Permanently added '10.0.40.32' (ED25519) to the list of known hosts.
-    tannerru@10.0.40.32: Permission denied (publickey).
-  unreachable: true
-2024-01-19 18:08:18,138 p=2964 u=tannerru n=ansible |  [ERROR]: User interrupted execution
-
-2024-01-19 18:16:42,690 p=3206 u=tannerru n=ansible | PLAY [k3s_cluster] **********************************************************************
-2024-01-19 18:16:42,696 p=3206 u=tannerru n=ansible | TASK [Gathering Facts] ******************************************************************
-2024-01-19 18:16:42,696 p=3206 u=tannerru n=ansible | Friday 19 January 2024  18:16:42 -0600 (0:00:00.006)       0:00:00.006 ******** 
-2024-01-19 18:16:44,637 p=3206 u=tannerru n=ansible | ok: [10.0.40.22]
-2024-01-19 18:16:44,664 p=3206 u=tannerru n=ansible | ok: [10.0.40.31]
-2024-01-19 18:16:44,705 p=3206 u=tannerru n=ansible | ok: [10.0.40.21]
-2024-01-19 18:16:46,362 p=3206 u=tannerru n=ansible | ok: [10.0.40.32]
-2024-01-19 18:17:15,671 p=3206 u=tannerru n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host 10.0.40.30: Failed
-to connect to the host via ssh: ssh: connect to host 10.0.40.30 port 22: Network is
-unreachable
-
-2024-01-19 18:17:47,436 p=3206 u=tannerru n=ansible | fatal: [10.0.40.30]: UNREACHABLE! => changed=false 
-  msg: |-
-    Data could not be sent to remote host "10.0.40.30". Make sure this host can be reached over ssh: ssh: connect to host 10.0.40.30 port 22: Network is unreachable
-  unreachable: true
+2024-01-19 19:34:42,784 p=10869 u=tannerru n=ansible | PLAY [k3s_cluster] ********************************************************************************************************************
+2024-01-19 19:34:42,790 p=10869 u=tannerru n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-01-19 19:34:42,790 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:42 -0600 (0:00:00.007)       0:00:00.007 ******** 
+2024-01-19 19:34:44,095 p=10869 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:34:44,096 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:44,099 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:44,125 p=10869 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:34:44,138 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:45,185 p=10869 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:34:45,230 p=10869 u=tannerru n=ansible | TASK [prereq : Set same timezone on every Server] *************************************************************************************
+2024-01-19 19:34:45,230 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:45 -0600 (0:00:02.439)       0:00:02.446 ******** 
+2024-01-19 19:34:45,602 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:45,609 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:45,612 p=10869 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:34:45,639 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:45,644 p=10869 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:34:45,837 p=10869 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:34:45,845 p=10869 u=tannerru n=ansible | TASK [prereq : Set SELinux to disabled state] *****************************************************************************************
+2024-01-19 19:34:45,845 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:45 -0600 (0:00:00.615)       0:00:03.061 ******** 
+2024-01-19 19:34:45,871 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:34:45,881 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:45,888 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:45,898 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:34:45,898 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:34:45,904 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:34:45,907 p=10869 u=tannerru n=ansible | TASK [prereq : Install nfs-common] ****************************************************************************************************
+2024-01-19 19:34:45,907 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:45 -0600 (0:00:00.062)       0:00:03.124 ******** 
+2024-01-19 19:34:46,919 p=10869 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:34:46,922 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:34:47,047 p=10869 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:34:47,047 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:34:47,133 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:34:47,809 p=10869 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:34:47,817 p=10869 u=tannerru n=ansible | TASK [prereq : Enable IPv4 forwarding] ************************************************************************************************
+2024-01-19 19:34:47,818 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:47 -0600 (0:00:01.910)       0:00:05.034 ******** 
+2024-01-19 19:34:48,100 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:48,100 p=10869 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:34:48,100 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:48,100 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:48,100 p=10869 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:34:48,290 p=10869 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:34:48,297 p=10869 u=tannerru n=ansible | TASK [prereq : Enable IPv6 forwarding] ************************************************************************************************
+2024-01-19 19:34:48,298 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:48 -0600 (0:00:00.480)       0:00:05.514 ******** 
+2024-01-19 19:34:48,506 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:48,508 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:48,512 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:48,516 p=10869 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:34:48,618 p=10869 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:34:48,765 p=10869 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:34:48,772 p=10869 u=tannerru n=ansible | TASK [prereq : Enable IPv6 router advertisements] *************************************************************************************
+2024-01-19 19:34:48,773 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:48 -0600 (0:00:00.474)       0:00:05.989 ******** 
+2024-01-19 19:34:48,977 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:48,985 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:48,991 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:48,995 p=10869 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:34:49,006 p=10869 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:34:49,162 p=10869 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:34:49,167 p=10869 u=tannerru n=ansible | TASK [prereq : Add br_netfilter to /etc/modules-load.d/] ******************************************************************************
+2024-01-19 19:34:49,167 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:49 -0600 (0:00:00.394)       0:00:06.383 ******** 
+2024-01-19 19:34:49,186 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:34:49,195 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:49,202 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:49,212 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:34:49,213 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:34:49,218 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:34:49,222 p=10869 u=tannerru n=ansible | TASK [prereq : Load br_netfilter] *****************************************************************************************************
+2024-01-19 19:34:49,222 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:49 -0600 (0:00:00.054)       0:00:06.438 ******** 
+2024-01-19 19:34:49,239 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:34:49,247 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:49,256 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:49,265 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:34:49,265 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:34:49,270 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:34:49,274 p=10869 u=tannerru n=ansible | TASK [prereq : Set bridge-nf-call-iptables (just to be sure)] *************************************************************************
+2024-01-19 19:34:49,274 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:49 -0600 (0:00:00.052)       0:00:06.490 ******** 
+2024-01-19 19:34:49,287 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21] => (item=net.bridge.bridge-nf-call-iptables) 
+2024-01-19 19:34:49,288 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21] => (item=net.bridge.bridge-nf-call-ip6tables) 
+2024-01-19 19:34:49,292 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:34:49,294 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22] => (item=net.bridge.bridge-nf-call-iptables) 
+2024-01-19 19:34:49,295 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22] => (item=net.bridge.bridge-nf-call-ip6tables) 
+2024-01-19 19:34:49,303 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:49,305 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23] => (item=net.bridge.bridge-nf-call-iptables) 
+2024-01-19 19:34:49,306 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23] => (item=net.bridge.bridge-nf-call-ip6tables) 
+2024-01-19 19:34:49,313 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:49,315 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31] => (item=net.bridge.bridge-nf-call-iptables) 
+2024-01-19 19:34:49,317 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31] => (item=net.bridge.bridge-nf-call-ip6tables) 
+2024-01-19 19:34:49,325 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32] => (item=net.bridge.bridge-nf-call-iptables) 
+2024-01-19 19:34:49,328 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32] => (item=net.bridge.bridge-nf-call-ip6tables) 
+2024-01-19 19:34:49,330 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:34:49,330 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:34:49,338 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33] => (item=net.bridge.bridge-nf-call-iptables) 
+2024-01-19 19:34:49,339 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33] => (item=net.bridge.bridge-nf-call-ip6tables) 
+2024-01-19 19:34:49,340 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:34:49,344 p=10869 u=tannerru n=ansible | TASK [prereq : Add /usr/local/bin to sudo secure_path] ********************************************************************************
+2024-01-19 19:34:49,344 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:49 -0600 (0:00:00.069)       0:00:06.560 ******** 
+2024-01-19 19:34:49,362 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:34:49,372 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:49,382 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:49,396 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:34:49,397 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:34:49,402 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:34:49,406 p=10869 u=tannerru n=ansible | TASK [prereq : Copy flannel config directory] *****************************************************************************************
+2024-01-19 19:34:49,406 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:49 -0600 (0:00:00.061)       0:00:06.622 ******** 
+2024-01-19 19:34:49,992 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:49,992 p=10869 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:34:50,002 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:50,007 p=10869 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:34:50,021 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:50,456 p=10869 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:34:50,485 p=10869 u=tannerru n=ansible | TASK [download : Download k3s binary x64] *********************************************************************************************
+2024-01-19 19:34:50,485 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:50 -0600 (0:00:01.079)       0:00:07.702 ******** 
+2024-01-19 19:34:54,494 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:34:54,505 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:34:55,055 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:34:55,056 p=10869 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:34:56,699 p=10869 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:34:57,296 p=10869 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:34:57,305 p=10869 u=tannerru n=ansible | TASK [download : Download k3s binary arm64] *******************************************************************************************
+2024-01-19 19:34:57,305 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:57 -0600 (0:00:06.819)       0:00:14.521 ******** 
+2024-01-19 19:34:57,333 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:34:57,343 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:57,353 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:57,362 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:34:57,365 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:34:57,373 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:34:57,378 p=10869 u=tannerru n=ansible | TASK [download : Download k3s binary armhf] *******************************************************************************************
+2024-01-19 19:34:57,378 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:57 -0600 (0:00:00.073)       0:00:14.594 ******** 
+2024-01-19 19:34:57,395 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:34:57,403 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:57,412 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:57,421 p=10869 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:34:57,423 p=10869 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:34:57,431 p=10869 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:34:57,502 p=10869 u=tannerru n=ansible | PLAY [master] *************************************************************************************************************************
+2024-01-19 19:34:57,508 p=10869 u=tannerru n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-01-19 19:34:57,508 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:57 -0600 (0:00:00.130)       0:00:14.725 ******** 
+2024-01-19 19:34:58,494 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:58,592 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:58,593 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:58,618 p=10869 u=tannerru n=ansible | TASK [k3s/master : Clean previous runs of k3s-init] ***********************************************************************************
+2024-01-19 19:34:58,618 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:58 -0600 (0:00:01.109)       0:00:15.834 ******** 
+2024-01-19 19:34:59,120 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:59,121 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:59,121 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:59,128 p=10869 u=tannerru n=ansible | TASK [k3s/master : Clean previous runs of k3s-init] ***********************************************************************************
+2024-01-19 19:34:59,128 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:59 -0600 (0:00:00.510)       0:00:16.344 ******** 
+2024-01-19 19:34:59,320 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:34:59,320 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:34:59,325 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:34:59,329 p=10869 u=tannerru n=ansible | TASK [k3s/master : Deploy VIP manifest] ***********************************************************************************************
+2024-01-19 19:34:59,329 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:59 -0600 (0:00:00.201)       0:00:16.545 ******** 
+2024-01-19 19:34:59,366 p=10869 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/k3s/master/tasks/vip.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23
+2024-01-19 19:34:59,371 p=10869 u=tannerru n=ansible | TASK [k3s/master : Create manifests directory on first master] ************************************************************************
+2024-01-19 19:34:59,371 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:59 -0600 (0:00:00.041)       0:00:16.587 ******** 
+2024-01-19 19:34:59,391 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:59,399 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:34:59,631 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:34:59,638 p=10869 u=tannerru n=ansible | TASK [k3s/master : Copy vip rbac manifest to first master] ****************************************************************************
+2024-01-19 19:34:59,639 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:34:59 -0600 (0:00:00.267)       0:00:16.855 ******** 
+2024-01-19 19:34:59,668 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:34:59,675 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:35:00,244 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:35:00,250 p=10869 u=tannerru n=ansible | TASK [k3s/master : Copy vip manifest to first master] *********************************************************************************
+2024-01-19 19:35:00,250 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:00 -0600 (0:00:00.611)       0:00:17.466 ******** 
+2024-01-19 19:35:00,276 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:35:00,282 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:35:00,892 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:35:00,901 p=10869 u=tannerru n=ansible | TASK [k3s/master : Deploy Multus manifest] ********************************************************************************************
+2024-01-19 19:35:00,901 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:00 -0600 (0:00:00.651)       0:00:18.117 ******** 
+2024-01-19 19:35:00,943 p=10869 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/k3s/master/tasks/multus.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23
+2024-01-19 19:35:00,949 p=10869 u=tannerru n=ansible | TASK [k3s/master : Create manifests directory on first master] ************************************************************************
+2024-01-19 19:35:00,949 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:00 -0600 (0:00:00.048)       0:00:18.165 ******** 
+2024-01-19 19:35:00,971 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:35:00,977 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:35:01,203 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:35:01,211 p=10869 u=tannerru n=ansible | TASK [k3s/master : Copy multus to first master] ***************************************************************************************
+2024-01-19 19:35:01,212 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:01 -0600 (0:00:00.262)       0:00:18.428 ******** 
+2024-01-19 19:35:01,242 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:35:01,248 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:35:01,758 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:35:01,766 p=10869 u=tannerru n=ansible | TASK [k3s/master : Init cluster inside the transient k3s-init service] ****************************************************************
+2024-01-19 19:35:01,767 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:01 -0600 (0:00:00.555)       0:00:18.983 ******** 
+2024-01-19 19:35:02,019 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:35:02,029 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:35:02,036 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:35:02,042 p=10869 u=tannerru n=ansible | TASK [k3s/master : Verify that all nodes actually joined (check k3s-init.service if this fails)] **************************************
+2024-01-19 19:35:02,043 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:02 -0600 (0:00:00.275)       0:00:19.259 ******** 
+2024-01-19 19:35:50,902 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:35:50,921 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:35:51,035 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:35:51,040 p=10869 u=tannerru n=ansible | TASK [k3s/master : Save logs of k3s-init.service] *************************************************************************************
+2024-01-19 19:35:51,040 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:51 -0600 (0:00:48.997)       0:01:08.256 ******** 
+2024-01-19 19:35:51,060 p=10869 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:35:51,062 p=10869 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:35:51,069 p=10869 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:35:51,074 p=10869 u=tannerru n=ansible | TASK [k3s/master : Kill the temporary service used for initialization] ****************************************************************
+2024-01-19 19:35:51,074 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:51 -0600 (0:00:00.033)       0:01:08.290 ******** 
+2024-01-19 19:35:51,625 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:35:51,632 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:35:51,685 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:35:51,688 p=10869 u=tannerru n=ansible | TASK [k3s/master : Copy K3s service file] *********************************************************************************************
+2024-01-19 19:35:51,688 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:51 -0600 (0:00:00.614)       0:01:08.905 ******** 
+2024-01-19 19:35:52,291 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:35:52,292 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:35:52,321 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:35:52,327 p=10869 u=tannerru n=ansible | TASK [k3s/master : Enable and check K3s service] **************************************************************************************
+2024-01-19 19:35:52,327 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:35:52 -0600 (0:00:00.638)       0:01:09.543 ******** 
+2024-01-19 19:36:04,739 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:36:05,058 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:36:06,891 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:36:06,900 p=10869 u=tannerru n=ansible | TASK [k3s/master : Wait for node-token] ***********************************************************************************************
+2024-01-19 19:36:06,900 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:06 -0600 (0:00:14.573)       0:01:24.116 ******** 
+2024-01-19 19:36:07,295 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:07,296 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:07,296 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:07,302 p=10869 u=tannerru n=ansible | TASK [k3s/master : Register node-token file access mode] ******************************************************************************
+2024-01-19 19:36:07,303 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:07 -0600 (0:00:00.402)       0:01:24.519 ******** 
+2024-01-19 19:36:07,522 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:07,529 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:07,533 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:07,540 p=10869 u=tannerru n=ansible | TASK [k3s/master : Change file access node-token] *************************************************************************************
+2024-01-19 19:36:07,540 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:07 -0600 (0:00:00.237)       0:01:24.756 ******** 
+2024-01-19 19:36:07,819 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:36:07,820 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:36:07,820 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:36:07,827 p=10869 u=tannerru n=ansible | TASK [k3s/master : Read node-token from master] ***************************************************************************************
+2024-01-19 19:36:07,827 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:07 -0600 (0:00:00.286)       0:01:25.043 ******** 
+2024-01-19 19:36:08,084 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:08,085 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:08,138 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:08,143 p=10869 u=tannerru n=ansible | TASK [k3s/master : Store Master node-token] *******************************************************************************************
+2024-01-19 19:36:08,144 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:08 -0600 (0:00:00.316)       0:01:25.360 ******** 
+2024-01-19 19:36:08,162 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:08,166 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:08,174 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:08,178 p=10869 u=tannerru n=ansible | TASK [k3s/master : Restore node-token file access] ************************************************************************************
+2024-01-19 19:36:08,178 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:08 -0600 (0:00:00.034)       0:01:25.394 ******** 
+2024-01-19 19:36:08,382 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:36:08,398 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:36:08,437 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:36:08,442 p=10869 u=tannerru n=ansible | TASK [k3s/master : Create directory .kube] ********************************************************************************************
+2024-01-19 19:36:08,443 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:08 -0600 (0:00:00.264)       0:01:25.659 ******** 
+2024-01-19 19:36:08,653 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:08,656 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:08,701 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:08,706 p=10869 u=tannerru n=ansible | TASK [k3s/master : Copy config file to user home directory] ***************************************************************************
+2024-01-19 19:36:08,706 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:08 -0600 (0:00:00.263)       0:01:25.922 ******** 
+2024-01-19 19:36:09,064 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:36:09,065 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:36:09,125 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:36:09,151 p=10869 u=tannerru n=ansible | TASK [k3s/master : Configure kubectl cluster to https://10.0.40.150:6443] *************************************************************
+2024-01-19 19:36:09,151 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:09 -0600 (0:00:00.445)       0:01:26.367 ******** 
+2024-01-19 19:36:09,498 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:36:09,498 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:36:09,631 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:36:09,640 p=10869 u=tannerru n=ansible | TASK [k3s/master : Create kubectl symlink] ********************************************************************************************
+2024-01-19 19:36:09,640 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:09 -0600 (0:00:00.489)       0:01:26.856 ******** 
+2024-01-19 19:36:09,917 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:09,918 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:09,918 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:09,925 p=10869 u=tannerru n=ansible | TASK [k3s/master : Create crictl symlink] *********************************************************************************************
+2024-01-19 19:36:09,925 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:09 -0600 (0:00:00.284)       0:01:27.141 ******** 
+2024-01-19 19:36:10,146 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:10,147 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:10,149 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:10,155 p=10869 u=tannerru n=ansible | TASK [k3s/master : Get contents of manifests folder] **********************************************************************************
+2024-01-19 19:36:10,155 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:10 -0600 (0:00:00.230)       0:01:27.371 ******** 
+2024-01-19 19:36:10,436 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:10,437 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:10,437 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:10,443 p=10869 u=tannerru n=ansible | TASK [k3s/master : Get sub dirs of manifests folder] **********************************************************************************
+2024-01-19 19:36:10,443 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:10 -0600 (0:00:00.287)       0:01:27.659 ******** 
+2024-01-19 19:36:10,652 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:10,655 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:10,656 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:10,662 p=10869 u=tannerru n=ansible | TASK [k3s/master : Remove manifests and folders that are only needed for bootstrapping cluster so k3s doesn't auto apply on start] ****
+2024-01-19 19:36:10,662 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:10 -0600 (0:00:00.219)       0:01:27.878 ******** 
+2024-01-19 19:36:10,958 p=10869 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/k3s/server/manifests/ccm.yaml)
+2024-01-19 19:36:10,961 p=10869 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/k3s/server/manifests/ccm.yaml)
+2024-01-19 19:36:10,962 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/vip.yaml)
+2024-01-19 19:36:11,167 p=10869 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/k3s/server/manifests/local-storage.yaml)
+2024-01-19 19:36:11,169 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/ccm.yaml)
+2024-01-19 19:36:11,172 p=10869 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/k3s/server/manifests/local-storage.yaml)
+2024-01-19 19:36:11,376 p=10869 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/k3s/server/manifests/rolebindings.yaml)
+2024-01-19 19:36:11,378 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/local-storage.yaml)
+2024-01-19 19:36:11,381 p=10869 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/k3s/server/manifests/rolebindings.yaml)
+2024-01-19 19:36:11,655 p=10869 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/k3s/server/manifests/coredns.yaml)
+2024-01-19 19:36:11,659 p=10869 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/k3s/server/manifests/coredns.yaml)
+2024-01-19 19:36:11,664 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/vip-rbac.yaml)
+2024-01-19 19:36:11,849 p=10869 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/k3s/server/manifests/runtimes.yaml)
+2024-01-19 19:36:11,852 p=10869 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/k3s/server/manifests/runtimes.yaml)
+2024-01-19 19:36:11,863 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/rolebindings.yaml)
+2024-01-19 19:36:12,045 p=10869 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/k3s/server/manifests/metrics-server)
+2024-01-19 19:36:12,050 p=10869 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/k3s/server/manifests/metrics-server)
+2024-01-19 19:36:12,069 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/coredns.yaml)
+2024-01-19 19:36:12,281 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/runtimes.yaml)
+2024-01-19 19:36:12,536 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/multus-daemonset.yaml)
+2024-01-19 19:36:12,746 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s/server/manifests/metrics-server)
+2024-01-19 19:36:12,802 p=10869 u=tannerru n=ansible | PLAY [node] ***************************************************************************************************************************
+2024-01-19 19:36:12,806 p=10869 u=tannerru n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-01-19 19:36:12,806 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:12 -0600 (0:00:02.143)       0:01:30.022 ******** 
+2024-01-19 19:36:13,837 p=10869 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:36:13,842 p=10869 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:36:13,843 p=10869 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:36:13,878 p=10869 u=tannerru n=ansible | TASK [k3s/node : Copy K3s service file] ***********************************************************************************************
+2024-01-19 19:36:13,879 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:13 -0600 (0:00:01.072)       0:01:31.095 ******** 
+2024-01-19 19:36:14,403 p=10869 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:36:14,404 p=10869 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:36:14,418 p=10869 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:36:14,423 p=10869 u=tannerru n=ansible | TASK [k3s/node : Enable and check K3s service] ****************************************************************************************
+2024-01-19 19:36:14,423 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:14 -0600 (0:00:00.544)       0:01:31.639 ******** 
+2024-01-19 19:36:31,970 p=10869 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:36:31,971 p=10869 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:36:31,971 p=10869 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:36:31,978 p=10869 u=tannerru n=ansible | TASK [k3s/node : Install network plugins (mainly for macvlan)] ************************************************************************
+2024-01-19 19:36:31,978 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:31 -0600 (0:00:17.555)       0:01:49.194 ******** 
+2024-01-19 19:36:34,566 p=10869 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:36:34,899 p=10869 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:36:35,090 p=10869 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:36:35,140 p=10869 u=tannerru n=ansible | PLAY [master] *************************************************************************************************************************
+2024-01-19 19:36:35,145 p=10869 u=tannerru n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-01-19 19:36:35,145 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:35 -0600 (0:00:03.166)       0:01:52.361 ******** 
+2024-01-19 19:36:36,147 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:36:36,182 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:36:36,345 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:36,372 p=10869 u=tannerru n=ansible | TASK [k3s/post : Deploy PureLB manifest] **********************************************************************************************
+2024-01-19 19:36:36,372 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:36 -0600 (0:00:01.227)       0:01:53.588 ******** 
+2024-01-19 19:36:36,409 p=10869 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/k3s/post/tasks/purelb.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23
+2024-01-19 19:36:36,414 p=10869 u=tannerru n=ansible | TASK [k3s/post : Create manifests directory for temp configuration] *******************************************************************
+2024-01-19 19:36:36,414 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:36 -0600 (0:00:00.041)       0:01:53.630 ******** 
+2024-01-19 19:36:36,659 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:36:36,894 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:36:37,178 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:36:37,190 p=10869 u=tannerru n=ansible | TASK [k3s/post : Copy PureLB manifest to first master] ********************************************************************************
+2024-01-19 19:36:37,190 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:37 -0600 (0:00:00.776)       0:01:54.407 ******** 
+2024-01-19 19:36:37,933 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:36:38,470 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:36:38,996 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:36:39,008 p=10869 u=tannerru n=ansible | TASK [k3s/post : Apply PureLB manifest] ***********************************************************************************************
+2024-01-19 19:36:39,008 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:39 -0600 (0:00:01.817)       0:01:56.224 ******** 
+2024-01-19 19:36:42,722 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:42,731 p=10869 u=tannerru n=ansible | TASK [k3s/post : Copy PureLB CRDS to first master] ************************************************************************************
+2024-01-19 19:36:42,731 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:42 -0600 (0:00:03.722)       0:01:59.947 ******** 
+2024-01-19 19:36:43,546 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:36:44,078 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:36:44,567 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:36:44,579 p=10869 u=tannerru n=ansible | TASK [k3s/post : Apply PureLB CRDS] ***************************************************************************************************
+2024-01-19 19:36:44,579 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:44 -0600 (0:00:01.848)       0:02:01.795 ******** 
+2024-01-19 19:36:45,065 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:45,074 p=10869 u=tannerru n=ansible | TASK [k3s/post : Deploy argocd namespace] *********************************************************************************************
+2024-01-19 19:36:45,074 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:45 -0600 (0:00:00.495)       0:02:02.290 ******** 
+2024-01-19 19:36:45,120 p=10869 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/k3s/post/tasks/argo.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23
+2024-01-19 19:36:45,127 p=10869 u=tannerru n=ansible | TASK [k3s/post : Create manifests directory for temp configuration] *******************************************************************
+2024-01-19 19:36:45,127 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:45 -0600 (0:00:00.053)       0:02:02.344 ******** 
+2024-01-19 19:36:45,362 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:36:45,579 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:36:45,808 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:36:45,821 p=10869 u=tannerru n=ansible | TASK [k3s/post : Copy argonamespace manifest to first master] *************************************************************************
+2024-01-19 19:36:45,821 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:45 -0600 (0:00:00.693)       0:02:03.037 ******** 
+2024-01-19 19:36:46,422 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:36:46,952 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:36:47,442 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:36:47,452 p=10869 u=tannerru n=ansible | TASK [k3s/post : Apply argonamespace] *************************************************************************************************
+2024-01-19 19:36:47,452 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:47 -0600 (0:00:01.630)       0:02:04.668 ******** 
+2024-01-19 19:36:47,933 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:47,941 p=10869 u=tannerru n=ansible | TASK [k3s/post : Apply ArgoCD] ********************************************************************************************************
+2024-01-19 19:36:47,941 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:47 -0600 (0:00:00.488)       0:02:05.157 ******** 
+2024-01-19 19:36:52,654 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:52,661 p=10869 u=tannerru n=ansible | TASK [k3s/post : Change Argo-Server to Loadbalancer] **********************************************************************************
+2024-01-19 19:36:52,662 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:52 -0600 (0:00:04.720)       0:02:09.878 ******** 
+2024-01-19 19:36:53,079 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:36:53,084 p=10869 u=tannerru n=ansible | TASK [k3s/post : Install Argocd CLI] **************************************************************************************************
+2024-01-19 19:36:53,084 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:36:53 -0600 (0:00:00.422)       0:02:10.300 ******** 
+2024-01-19 19:37:03,062 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:37:20,975 p=10869 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:37:21,612 p=10869 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:37:21,618 p=10869 u=tannerru n=ansible | TASK [k3s/post : Deploy Multus Network] ***********************************************************************************************
+2024-01-19 19:37:21,618 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:21 -0600 (0:00:28.534)       0:02:38.834 ******** 
+2024-01-19 19:37:21,659 p=10869 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/k3s/post/tasks/multus.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23
+2024-01-19 19:37:21,669 p=10869 u=tannerru n=ansible | TASK [k3s/post : Create manifests directory for temp configuration] *******************************************************************
+2024-01-19 19:37:21,669 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:21 -0600 (0:00:00.050)       0:02:38.885 ******** 
+2024-01-19 19:37:21,966 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:37:22,173 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:37:22,457 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:37:22,468 p=10869 u=tannerru n=ansible | TASK [k3s/post : Copy medianamespace manifest to first master] ************************************************************************
+2024-01-19 19:37:22,468 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:22 -0600 (0:00:00.799)       0:02:39.685 ******** 
+2024-01-19 19:37:23,072 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:37:23,548 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:37:24,081 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:37:24,093 p=10869 u=tannerru n=ansible | TASK [k3s/post : Apply medianamespace] ************************************************************************************************
+2024-01-19 19:37:24,093 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:24 -0600 (0:00:01.624)       0:02:41.310 ******** 
+2024-01-19 19:37:24,592 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:37:24,601 p=10869 u=tannerru n=ansible | TASK [k3s/post : Copy multus network manifest to first master] ************************************************************************
+2024-01-19 19:37:24,601 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:24 -0600 (0:00:00.507)       0:02:41.817 ******** 
+2024-01-19 19:37:25,207 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:37:25,697 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:37:26,174 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:37:26,185 p=10869 u=tannerru n=ansible | TASK [k3s/post : Apply multus network] ************************************************************************************************
+2024-01-19 19:37:26,185 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:26 -0600 (0:00:01.584)       0:02:43.402 ******** 
+2024-01-19 19:37:26,580 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:37:26,589 p=10869 u=tannerru n=ansible | TASK [k3s/post : Deploy Longhorn Storage] *********************************************************************************************
+2024-01-19 19:37:26,589 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:26 -0600 (0:00:00.403)       0:02:43.805 ******** 
+2024-01-19 19:37:26,632 p=10869 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/k3s/post/tasks/longhorn.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23
+2024-01-19 19:37:26,645 p=10869 u=tannerru n=ansible | TASK [k3s/post : Create manifests directory for temp configuration] *******************************************************************
+2024-01-19 19:37:26,645 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:26 -0600 (0:00:00.055)       0:02:43.861 ******** 
+2024-01-19 19:37:26,874 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:37:27,172 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:37:27,382 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:37:27,396 p=10869 u=tannerru n=ansible | TASK [k3s/post : Copy Longhorn manifest to first master] ******************************************************************************
+2024-01-19 19:37:27,396 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:27 -0600 (0:00:00.751)       0:02:44.612 ******** 
+2024-01-19 19:37:28,071 p=10869 u=tannerru n=ansible | changed: [10.0.40.21] => (item=10.0.40.21)
+2024-01-19 19:37:28,591 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.22)
+2024-01-19 19:37:29,114 p=10869 u=tannerru n=ansible | ok: [10.0.40.21] => (item=10.0.40.23)
+2024-01-19 19:37:29,123 p=10869 u=tannerru n=ansible | TASK [k3s/post : Apply Longhorn manifest] *********************************************************************************************
+2024-01-19 19:37:29,123 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:29 -0600 (0:00:01.727)       0:02:46.340 ******** 
+2024-01-19 19:37:31,763 p=10869 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:37:31,772 p=10869 u=tannerru n=ansible | TASK [k3s/post : Remove tmp directory used for manifests] *****************************************************************************
+2024-01-19 19:37:31,772 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:31 -0600 (0:00:02.648)       0:02:48.988 ******** 
+2024-01-19 19:37:31,990 p=10869 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:37:32,037 p=10869 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:37:32,037 p=10869 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | 10.0.40.21                 : ok=62   changed=24   unreachable=0    failed=0    skipped=8    rescued=0    ignored=0   
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | 10.0.40.22                 : ok=39   changed=12   unreachable=0    failed=0    skipped=13   rescued=0    ignored=0   
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | 10.0.40.23                 : ok=39   changed=12   unreachable=0    failed=0    skipped=13   rescued=0    ignored=0   
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | 10.0.40.31                 : ok=12   changed=5    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | 10.0.40.32                 : ok=12   changed=5    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | 10.0.40.33                 : ok=12   changed=5    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | Friday 19 January 2024  19:37:32 -0600 (0:00:00.305)       0:02:49.293 ******** 
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | =============================================================================== 
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/master : Verify that all nodes actually joined (check k3s-init.service if this fails) ------------------------------------- 49.00s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Install Argocd CLI ------------------------------------------------------------------------------------------------- 28.53s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/node : Enable and check K3s service --------------------------------------------------------------------------------------- 17.55s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/master : Enable and check K3s service ------------------------------------------------------------------------------------- 14.57s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | download : Download k3s binary x64 --------------------------------------------------------------------------------------------- 6.82s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Apply ArgoCD -------------------------------------------------------------------------------------------------------- 4.72s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Apply PureLB manifest ----------------------------------------------------------------------------------------------- 3.72s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/node : Install network plugins (mainly for macvlan) ------------------------------------------------------------------------ 3.17s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Apply Longhorn manifest --------------------------------------------------------------------------------------------- 2.65s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | Gathering Facts ---------------------------------------------------------------------------------------------------------------- 2.44s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/master : Remove manifests and folders that are only needed for bootstrapping cluster so k3s doesn't auto apply on start ---- 2.14s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | prereq : Install nfs-common ---------------------------------------------------------------------------------------------------- 1.91s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Copy PureLB CRDS to first master ------------------------------------------------------------------------------------ 1.85s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Copy PureLB manifest to first master -------------------------------------------------------------------------------- 1.82s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Copy Longhorn manifest to first master ------------------------------------------------------------------------------ 1.73s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Copy argonamespace manifest to first master ------------------------------------------------------------------------- 1.63s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Copy medianamespace manifest to first master ------------------------------------------------------------------------ 1.62s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | k3s/post : Copy multus network manifest to first master ------------------------------------------------------------------------ 1.58s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | Gathering Facts ---------------------------------------------------------------------------------------------------------------- 1.23s
+2024-01-19 19:37:32,077 p=10869 u=tannerru n=ansible | Gathering Facts ---------------------------------------------------------------------------------------------------------------- 1.11s
+2024-01-19 19:43:31,761 p=11631 u=tannerru n=ansible | PLAY [k3s_cluster] ********************************************************************************************************************
+2024-01-19 19:43:31,766 p=11631 u=tannerru n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-01-19 19:43:31,766 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:31 -0600 (0:00:00.006)       0:00:00.006 ******** 
+2024-01-19 19:43:33,005 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:43:33,013 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:43:33,102 p=11631 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:43:33,162 p=11631 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:43:33,312 p=11631 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:43:34,322 p=11631 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:43:34,374 p=11631 u=tannerru n=ansible | TASK [reset : Disable services] *******************************************************************************************************
+2024-01-19 19:43:34,374 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:34 -0600 (0:00:02.607)       0:00:02.613 ******** 
+2024-01-19 19:43:34,873 p=11631 u=tannerru n=ansible | ok: [10.0.40.32] => (item=k3s)
+2024-01-19 19:43:34,898 p=11631 u=tannerru n=ansible | ok: [10.0.40.31] => (item=k3s)
+2024-01-19 19:43:35,371 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=k3s)
+2024-01-19 19:43:35,373 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=k3s)
+2024-01-19 19:43:35,539 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=k3s)
+2024-01-19 19:43:35,670 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=k3s-node)
+2024-01-19 19:43:35,684 p=11631 u=tannerru n=ansible | ok: [10.0.40.22] => (item=k3s-node)
+2024-01-19 19:43:35,686 p=11631 u=tannerru n=ansible | ok: [10.0.40.23] => (item=k3s-node)
+2024-01-19 19:43:35,843 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=k3s-node)
+2024-01-19 19:43:35,868 p=11631 u=tannerru n=ansible | ok: [10.0.40.21] => (item=k3s-node)
+2024-01-19 19:43:36,058 p=11631 u=tannerru n=ansible | ok: [10.0.40.32] => (item=k3s-init)
+2024-01-19 19:43:36,058 p=11631 u=tannerru n=ansible | ok: [10.0.40.23] => (item=k3s-init)
+2024-01-19 19:43:36,063 p=11631 u=tannerru n=ansible | ok: [10.0.40.22] => (item=k3s-init)
+2024-01-19 19:43:36,197 p=11631 u=tannerru n=ansible | ok: [10.0.40.31] => (item=k3s-init)
+2024-01-19 19:43:36,203 p=11631 u=tannerru n=ansible | ok: [10.0.40.21] => (item=k3s-init)
+2024-01-19 19:43:36,410 p=11631 u=tannerru n=ansible | ok: [10.0.40.33] => (item=k3s)
+2024-01-19 19:43:37,228 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=k3s-node)
+2024-01-19 19:43:37,720 p=11631 u=tannerru n=ansible | ok: [10.0.40.33] => (item=k3s-init)
+2024-01-19 19:43:37,725 p=11631 u=tannerru n=ansible | TASK [reset : RUN pkill -9 -f "k3s/data/[^/]+/bin/containerd-shim-runc"] **************************************************************
+2024-01-19 19:43:37,725 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:37 -0600 (0:00:03.351)       0:00:05.965 ******** 
+2024-01-19 19:43:38,000 p=11631 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:43:38,002 p=11631 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:43:38,011 p=11631 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:43:38,014 p=11631 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:43:38,043 p=11631 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:43:38,207 p=11631 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:43:38,213 p=11631 u=tannerru n=ansible | TASK [reset : Umount k3s filesystems] *************************************************************************************************
+2024-01-19 19:43:38,213 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:38 -0600 (0:00:00.487)       0:00:06.452 ******** 
+2024-01-19 19:43:38,345 p=11631 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/reset/tasks/umount_with_children.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23, 10.0.40.31, 10.0.40.32, 10.0.40.33 => (item=/run/k3s)
+2024-01-19 19:43:38,346 p=11631 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/reset/tasks/umount_with_children.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23, 10.0.40.31, 10.0.40.32, 10.0.40.33 => (item=/var/lib/kubelet)
+2024-01-19 19:43:38,347 p=11631 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/reset/tasks/umount_with_children.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23, 10.0.40.31, 10.0.40.32, 10.0.40.33 => (item=/run/netns)
+2024-01-19 19:43:38,348 p=11631 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/reset/tasks/umount_with_children.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23, 10.0.40.31, 10.0.40.32, 10.0.40.33 => (item=/var/lib/rancher/k3s)
+2024-01-19 19:43:38,349 p=11631 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/reset/tasks/umount_with_children.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23, 10.0.40.31, 10.0.40.32, 10.0.40.33 => (item=/var/lib/kubelet/pods)
+2024-01-19 19:43:38,350 p=11631 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/reset/tasks/umount_with_children.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23, 10.0.40.31, 10.0.40.32, 10.0.40.33 => (item=/var/lib/kubelet/plugins)
+2024-01-19 19:43:38,351 p=11631 u=tannerru n=ansible | included: /Users/tannerru/Desktop/Git/ansible-2/Linux/k3s_dev_cluster/roles/reset/tasks/umount_with_children.yml for 10.0.40.21, 10.0.40.22, 10.0.40.23, 10.0.40.31, 10.0.40.32, 10.0.40.33 => (item=/run/netns/cni-)
+2024-01-19 19:43:38,357 p=11631 u=tannerru n=ansible | TASK [reset : Get the list of mounted filesystems] ************************************************************************************
+2024-01-19 19:43:38,357 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:38 -0600 (0:00:00.144)       0:00:06.597 ******** 
+2024-01-19 19:43:38,567 p=11631 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:43:38,578 p=11631 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:43:38,578 p=11631 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:43:38,690 p=11631 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:43:38,690 p=11631 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:43:38,868 p=11631 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:43:38,877 p=11631 u=tannerru n=ansible | TASK [reset : Umount filesystem] ******************************************************************************************************
+2024-01-19 19:43:38,877 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:38 -0600 (0:00:00.519)       0:00:07.116 ******** 
+2024-01-19 19:43:39,207 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/622f1582af20f655f4a17eab8a4294f24e278beffd2e395becc5c3a85aa7e3b9/rootfs)
+2024-01-19 19:43:39,208 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/759bdbfcc6be36ddd0f6bbb0e11622d7763ff80816da0afac3079432f186d0eb/rootfs)
+2024-01-19 19:43:39,209 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/133910b6c8b9af6dd2bde29340acb55f1580af090e60826600833a0af8928992/rootfs)
+2024-01-19 19:43:39,211 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/4f6d849f5b1c19a93ec4c4a82c75dc53e282026d0bab244ea56e77b42118df43/rootfs)
+2024-01-19 19:43:39,212 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/b9a9323293dcae2bd9c4aa1af5d2af74f2361b4458fc75488b7c4a801d80cc9d/rootfs)
+2024-01-19 19:43:39,405 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/8633a9924b7bdc4eda43c5ccca38c24d0b8dc2ea30d8e4164bf90b9e4441d718/rootfs)
+2024-01-19 19:43:39,418 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/84acb23a9f7dd06dec0c34327ec3fd93565d1b81b929b5d404990390c13cc1ee/rootfs)
+2024-01-19 19:43:39,419 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/622f1582af20f655f4a17eab8a4294f24e278beffd2e395becc5c3a85aa7e3b9/shm)
+2024-01-19 19:43:39,426 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/4388f83a04c06b24e40a4e71a546e665c8f725dc622f4d515caf138ad6832ec7/rootfs)
+2024-01-19 19:43:39,435 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/a22848f14ac48e7eedce00062acd10a1785b96f6716a6cbc3afbd87f974c111e/rootfs)
+2024-01-19 19:43:39,595 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/9715e39e26c273e387f10d7aab9e192f4207c5dd278e45bf1c752953cb84b6fd/rootfs)
+2024-01-19 19:43:39,605 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/f91e8bbc5e2e16875e80f08edecd518ee61d0bc5a78b8a4967e197a73dc59f9a/rootfs)
+2024-01-19 19:43:39,622 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/f26ce6313fc5fb5bb8cffdf3860e2680653bda5f7b057b29d28227c5ff7648a2/rootfs)
+2024-01-19 19:43:39,727 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/c36b39e172fc0bce8f72e2b428797921467850ff3cdf221ce4583516181d915a/rootfs)
+2024-01-19 19:43:39,728 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/45d2682fd9c21e99dfe6b40961d9a03da8617240116c08ccc39972482489c8ba/rootfs)
+2024-01-19 19:43:39,784 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/9715e39e26c273e387f10d7aab9e192f4207c5dd278e45bf1c752953cb84b6fd/shm)
+2024-01-19 19:43:39,793 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/2a842ea032367fa970aae69983239f2df23f11c1204013a1e58c257b33504a4b/rootfs)
+2024-01-19 19:43:39,894 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/f26ce6313fc5fb5bb8cffdf3860e2680653bda5f7b057b29d28227c5ff7648a2/shm)
+2024-01-19 19:43:39,941 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/7550c618968e4a35187403e049ad7f3d7eada3487ddcc77703e2b9215f3e89ea/rootfs)
+2024-01-19 19:43:39,945 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/78d36dca1d2f9c9aee87ef41f7c26a04e8813eb3684af2b135e4d5c27985ef9d/rootfs)
+2024-01-19 19:43:39,972 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/42dac89497b893784878e1de50d15196f702cc79433eeb6b3dbef141f0aa0bb4/rootfs)
+2024-01-19 19:43:39,979 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/2a842ea032367fa970aae69983239f2df23f11c1204013a1e58c257b33504a4b/shm)
+2024-01-19 19:43:40,094 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/391fe7e3e0220bb82b921374216fd20ee1524fdd074c02d8108ee26c1d2e0d65/rootfs)
+2024-01-19 19:43:40,159 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/78d36dca1d2f9c9aee87ef41f7c26a04e8813eb3684af2b135e4d5c27985ef9d/shm)
+2024-01-19 19:43:40,160 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/be35e9cc6cb5a6e2a5e770d1ae167d96a8fdd92bf578d75bce572fdd15cbe769/rootfs)
+2024-01-19 19:43:40,251 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/42dac89497b893784878e1de50d15196f702cc79433eeb6b3dbef141f0aa0bb4/shm)
+2024-01-19 19:43:40,252 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/f91e8bbc5e2e16875e80f08edecd518ee61d0bc5a78b8a4967e197a73dc59f9a/shm)
+2024-01-19 19:43:40,292 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/6cbd5399a073a3cc5ba53d3c70cb9cba697ff71a8740225d1be47a0bee5f5624/rootfs)
+2024-01-19 19:43:40,449 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/25ad76a9455b1e3d1cfc90b4f4d3483845c690085aaf778127f6f0ff6ad31399/rootfs)
+2024-01-19 19:43:40,474 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/52fdb94a77babdbb8e5d5f1ce83215caefd223c67772f68b340f99a0259442ec/rootfs)
+2024-01-19 19:43:40,481 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/767a48565660b701db91fcf846ccf20487865bdf870ab0ffabeeda348b6e82af/rootfs)
+2024-01-19 19:43:40,502 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/657206ea5fdd109edf717b74a06459c03dfc133b358d827cdf84ab5ce3d0fd53/rootfs)
+2024-01-19 19:43:40,646 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/2d2a379a8670a96d6279e1dbf564c763c6ddecf57b34ac68ced6c6f38744bf55/rootfs)
+2024-01-19 19:43:40,665 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/db1f50db9a6719894cc694a01258bb0bf99c27b19ec52b3884bb79b0fdb75db0/rootfs)
+2024-01-19 19:43:40,779 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/ae58f2ca088195e059591bf83b766f5bbe88950a8ae268aad52a913a97a8ff9b/rootfs)
+2024-01-19 19:43:40,780 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/24616e1c934f652fa0017d7202a81febaf7d47509f5c3b1652895a0668d8f178/rootfs)
+2024-01-19 19:43:40,846 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/a22848f14ac48e7eedce00062acd10a1785b96f6716a6cbc3afbd87f974c111e/shm)
+2024-01-19 19:43:40,939 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/f18f84f42f3af02e76f375c8b65fffce041cca37b4f206f520cd298edf5a20ec/rootfs)
+2024-01-19 19:43:41,011 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/6c44b5a901fb5427ab692ea746e189f8415c4bb5fce28fdaece58a15ca57421b/rootfs)
+2024-01-19 19:43:41,056 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/a901d315e9253c3d111bb469e875152338f2503259cac24940279aeba08e9a0c/rootfs)
+2024-01-19 19:43:41,104 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/2940139144fcad6c0cac33238ddaa3a5cc9172303d3f722a58d18a3dd19d6802/rootfs)
+2024-01-19 19:43:41,145 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/e02f3922b63d4eb47508b28298a6ecd2e17c46ca7e5f212340965a3c09b0f943/rootfs)
+2024-01-19 19:43:41,307 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/ca39f58ed6236c9e6069cb12ae45687eff78dac525a241f5c7c4951e4fac3ded/rootfs)
+2024-01-19 19:43:41,310 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/25ad76a9455b1e3d1cfc90b4f4d3483845c690085aaf778127f6f0ff6ad31399/shm)
+2024-01-19 19:43:41,320 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/d930152dbcb7a350ffcdd0f7de785c6064cfcd8a611a2a056b7896be412d3734/rootfs)
+2024-01-19 19:43:41,354 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/e02f3922b63d4eb47508b28298a6ecd2e17c46ca7e5f212340965a3c09b0f943/shm)
+2024-01-19 19:43:41,525 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/3ccd39e3382253b9a1c2e72ecc78da528246fe06ae002a93da70bb75ef362cad/rootfs)
+2024-01-19 19:43:41,528 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/610c51f6587d62be50c18a245dea4636af53a299f7dbc9503c8bf03fe6100782/rootfs)
+2024-01-19 19:43:41,529 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/92adb2f556e4c719f2d58b216f8206acc1432b7d271b4944f9813bf320c8a58d/rootfs)
+2024-01-19 19:43:41,546 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/ca3b5d66d14a76b7a1fb2100af8b831db2435be7cec7ce0a02d22b377c8c774f/rootfs)
+2024-01-19 19:43:41,728 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/e2cd6a0700297557a727e00cacdc1f87ac4838d7df485c75021fd2ebcfd016c8/rootfs)
+2024-01-19 19:43:41,734 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/3b500e9e21a9f7f703c0af899a33cbc2aca6ba5ef28f24fdc0b41eacd4106b5b/rootfs)
+2024-01-19 19:43:41,832 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/767a48565660b701db91fcf846ccf20487865bdf870ab0ffabeeda348b6e82af/shm)
+2024-01-19 19:43:41,834 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/edcca504be5e77bdc292b1da343848bdc791579c2a7e26043d44fc1bc7ebd751/rootfs)
+2024-01-19 19:43:42,032 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/49eee4c1d49f2aa08ecb2086d306395fda2e052b223e9136958861f3de0269d5/rootfs)
+2024-01-19 19:43:42,043 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/04371467bdb8220c054ce363ff4034a50d71751e7f0be64b5f71d08c18a65b24/rootfs)
+2024-01-19 19:43:42,046 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/3ccd39e3382253b9a1c2e72ecc78da528246fe06ae002a93da70bb75ef362cad/shm)
+2024-01-19 19:43:42,070 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/ae58f2ca088195e059591bf83b766f5bbe88950a8ae268aad52a913a97a8ff9b/shm)
+2024-01-19 19:43:42,246 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/3b500e9e21a9f7f703c0af899a33cbc2aca6ba5ef28f24fdc0b41eacd4106b5b/shm)
+2024-01-19 19:43:42,249 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/996e987d5179f05efb25c79b4941f34be0bf0238ca23fe28b1eda75cd2f0829d/rootfs)
+2024-01-19 19:43:42,255 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/a901d315e9253c3d111bb469e875152338f2503259cac24940279aeba08e9a0c/shm)
+2024-01-19 19:43:42,355 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/6c44b5a901fb5427ab692ea746e189f8415c4bb5fce28fdaece58a15ca57421b/shm)
+2024-01-19 19:43:42,550 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/63a9f7c90c3e9e5bdeb17bc3bc67ccd1ba44d126d07726ae413ddab97f145369/rootfs)
+2024-01-19 19:43:42,554 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/ca3b5d66d14a76b7a1fb2100af8b831db2435be7cec7ce0a02d22b377c8c774f/shm)
+2024-01-19 19:43:42,556 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/e2cd6a0700297557a727e00cacdc1f87ac4838d7df485c75021fd2ebcfd016c8/shm)
+2024-01-19 19:43:42,619 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/ca39f58ed6236c9e6069cb12ae45687eff78dac525a241f5c7c4951e4fac3ded/shm)
+2024-01-19 19:43:42,760 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/49eee4c1d49f2aa08ecb2086d306395fda2e052b223e9136958861f3de0269d5/shm)
+2024-01-19 19:43:42,763 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/486416109124e5b861d8eaa2a3da4634e5657ce211d104e7b5a36c49cc86ef81/rootfs)
+2024-01-19 19:43:42,891 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/92adb2f556e4c719f2d58b216f8206acc1432b7d271b4944f9813bf320c8a58d/shm)
+2024-01-19 19:43:43,064 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/c9220338bcc01de38389ded95073b1066d19533a1babd46beb1519a2beabb74c/rootfs)
+2024-01-19 19:43:43,067 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/edcca504be5e77bdc292b1da343848bdc791579c2a7e26043d44fc1bc7ebd751/shm)
+2024-01-19 19:43:43,131 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/52b1c2403571de8346ae86c8c167420fb6642236f81064e2fcbb6905164150d2/rootfs)
+2024-01-19 19:43:43,272 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/63a9f7c90c3e9e5bdeb17bc3bc67ccd1ba44d126d07726ae413ddab97f145369/shm)
+2024-01-19 19:43:43,275 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/04371467bdb8220c054ce363ff4034a50d71751e7f0be64b5f71d08c18a65b24/shm)
+2024-01-19 19:43:43,406 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/0ab7f7c10e4a54a7708aa61ad11a1f86ba495d41f0a34066325b5be2182f4727/rootfs)
+2024-01-19 19:43:43,471 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/996e987d5179f05efb25c79b4941f34be0bf0238ca23fe28b1eda75cd2f0829d/shm)
+2024-01-19 19:43:43,473 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/2aaa239c1c2691e4a14811614f7e0aecc4b3a0d3d5679de36954f3fffa4a1ca0/rootfs)
+2024-01-19 19:43:43,657 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/a46aaabf641b8f4d04224cd4b8ff632dffe2b4a0717342571514ad88b7e80a98/rootfs)
+2024-01-19 19:43:43,674 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/486416109124e5b861d8eaa2a3da4634e5657ce211d104e7b5a36c49cc86ef81/shm)
+2024-01-19 19:43:43,677 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/c9220338bcc01de38389ded95073b1066d19533a1babd46beb1519a2beabb74c/shm)
+2024-01-19 19:43:43,940 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/2f6478cdbe1ea174a59d0a71dc1bb41509babd3b595f97a1dafc027b39b0aade/rootfs)
+2024-01-19 19:43:43,943 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/2aaa239c1c2691e4a14811614f7e0aecc4b3a0d3d5679de36954f3fffa4a1ca0/shm)
+2024-01-19 19:43:43,946 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/047e435ddad27d3d09098a7f1a6c718fe08e8419a6cfc72de211ff82c6565105/rootfs)
+2024-01-19 19:43:44,161 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/b41436f4b8e4161a98a39b1b6e527511db97b7a4c764230dc7c6144540e30b6f/rootfs)
+2024-01-19 19:43:44,174 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/b1034a245c10eb3a11530afa7fb0588efac4712c906de4bb08421700cb900178/rootfs)
+2024-01-19 19:43:44,189 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/3d1093bc763068e7c0d4e868a7464ab4f24953360ceaf5ac807b1e7737396361/rootfs)
+2024-01-19 19:43:44,461 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/9fbed13207715ce8143cd1f50f17790341fe68bced3af1a1ca97f706aecc3014/rootfs)
+2024-01-19 19:43:44,465 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/2f6478cdbe1ea174a59d0a71dc1bb41509babd3b595f97a1dafc027b39b0aade/shm)
+2024-01-19 19:43:44,481 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/10f28175bf8447c8a764e8726a9ad8efeab416a31435574accc4e61fb4abd321/rootfs)
+2024-01-19 19:43:44,705 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/7da16f245038ad506c21dc806f22ba320a3ac47083d0ea6bfa3420dcef588cde/rootfs)
+2024-01-19 19:43:44,706 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/d4a66133289497264933cc5edc46b0028f1b10c887dac3193784ea608f88ff19/rootfs)
+2024-01-19 19:43:44,712 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/3d1093bc763068e7c0d4e868a7464ab4f24953360ceaf5ac807b1e7737396361/shm)
+2024-01-19 19:43:44,994 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/9f094009565d3a272eeb78f16ae41f97a8d89a83edf3f0f9cd71cca5d856280d/rootfs)
+2024-01-19 19:43:44,996 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/d4a66133289497264933cc5edc46b0028f1b10c887dac3193784ea608f88ff19/shm)
+2024-01-19 19:43:44,998 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/14362b28bc860c50b53429409d4c256929d71bdb8b2c96884ca1345b2eaeadfb/rootfs)
+2024-01-19 19:43:45,207 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/14362b28bc860c50b53429409d4c256929d71bdb8b2c96884ca1345b2eaeadfb/shm)
+2024-01-19 19:43:45,210 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/8dbdd816cb3e063f8edd4ba681b43db4d65ed5d30b3eaf468c7eb250e74a278c/rootfs)
+2024-01-19 19:43:45,232 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/9f094009565d3a272eeb78f16ae41f97a8d89a83edf3f0f9cd71cca5d856280d/shm)
+2024-01-19 19:43:45,508 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/8dbdd816cb3e063f8edd4ba681b43db4d65ed5d30b3eaf468c7eb250e74a278c/shm)
+2024-01-19 19:43:45,520 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/9d2fb651f31b3c9bd4ad8ff119dbc76698612a9a5bd026d4140424e5255fce02/rootfs)
+2024-01-19 19:43:45,522 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/bf99084b04d37c8b49b3b58d2472bcd91704793f378a7551e160442452f61d75/rootfs)
+2024-01-19 19:43:45,729 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/0e2c232fe208a4104ff17f7f399c883dc4ffbf3e2d1de6fa6dc144ecb4a42227/rootfs)
+2024-01-19 19:43:45,760 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/8ab1f421db1c892514c94d33accae6e96dc263ed21094b638500a42af9fabe7d/rootfs)
+2024-01-19 19:43:46,038 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/a9ff17d1ab5087fa67d8707de518f543e387dcbe5b24d54a918a814ae77e25a0/rootfs)
+2024-01-19 19:43:46,040 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/9d2fb651f31b3c9bd4ad8ff119dbc76698612a9a5bd026d4140424e5255fce02/shm)
+2024-01-19 19:43:46,262 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/b5233952756ec4a36eb39e7b0068b66cd440fb3e10abfbd2ed86715923dd87ba/rootfs)
+2024-01-19 19:43:46,271 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/790895a9f5dc50d9ee905c8940e84cb83a2f35897e6d5579f7063c22e384fb09/rootfs)
+2024-01-19 19:43:46,548 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/3a008b9bb41fcac519be1d298c9ad2e67f164d3090eb0027f325815463331290/rootfs)
+2024-01-19 19:43:46,550 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/0e2c232fe208a4104ff17f7f399c883dc4ffbf3e2d1de6fa6dc144ecb4a42227/shm)
+2024-01-19 19:43:46,759 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/b5233952756ec4a36eb39e7b0068b66cd440fb3e10abfbd2ed86715923dd87ba/shm)
+2024-01-19 19:43:46,772 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/3a008b9bb41fcac519be1d298c9ad2e67f164d3090eb0027f325815463331290/shm)
+2024-01-19 19:43:47,099 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/790895a9f5dc50d9ee905c8940e84cb83a2f35897e6d5579f7063c22e384fb09/shm)
+2024-01-19 19:43:47,102 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/52660cfa141a5cf10b9311af14de4e780a954288271f3a86e0cc7afcb4b3fc32/rootfs)
+2024-01-19 19:43:47,327 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/7f76f4e911af7627c58e8891dbc25473807790f6f2c89162c424232a6a6ed049/rootfs)
+2024-01-19 19:43:47,333 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/bbc4601bd989c5218963259e2cca0d81a646158a9d3d5e4ae03afad6fc43b9d1/rootfs)
+2024-01-19 19:43:47,604 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/bbc4601bd989c5218963259e2cca0d81a646158a9d3d5e4ae03afad6fc43b9d1/shm)
+2024-01-19 19:43:47,614 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/f2697acee7c93159573861648f4a6d19323018744864e9252db7732c2a3576d5/rootfs)
+2024-01-19 19:43:47,834 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/f2697acee7c93159573861648f4a6d19323018744864e9252db7732c2a3576d5/shm)
+2024-01-19 19:43:48,139 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/9de8e06b48d69acfd75f08969c12f5b357b247ae960c35b8b9232ccd9d6e56ef/rootfs)
+2024-01-19 19:43:48,346 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s/containerd/io.containerd.grpc.v1.cri/sandboxes/9de8e06b48d69acfd75f08969c12f5b357b247ae960c35b8b9232ccd9d6e56ef/shm)
+2024-01-19 19:43:48,367 p=11631 u=tannerru n=ansible | TASK [reset : Get the list of mounted filesystems] ************************************************************************************
+2024-01-19 19:43:48,368 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:48 -0600 (0:00:09.490)       0:00:16.607 ******** 
+2024-01-19 19:43:48,657 p=11631 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:43:48,658 p=11631 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:43:48,658 p=11631 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:43:48,658 p=11631 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:43:48,658 p=11631 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:43:48,865 p=11631 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:43:48,873 p=11631 u=tannerru n=ansible | TASK [reset : Umount filesystem] ******************************************************************************************************
+2024-01-19 19:43:48,874 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:48 -0600 (0:00:00.505)       0:00:17.113 ******** 
+2024-01-19 19:43:49,169 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/kubelet/pods/47929d9d-84bd-441b-8595-7d094cd5a712/volumes/kubernetes.io~projected/kube-api-access-xn44d)
+2024-01-19 19:43:49,170 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/kubelet/pods/cf4be416-4879-484a-bf23-59d83af73251/volumes/kubernetes.io~projected/kube-api-access-qs2nd)
+2024-01-19 19:43:49,171 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/kubelet/pods/5a238159-b09e-4738-81bd-91ffa969d09f/volumes/kubernetes.io~projected/kube-api-access-tfdvp)
+2024-01-19 19:43:49,172 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/bf371b05-dcce-40bd-a733-59c9bd465593/volumes/kubernetes.io~projected/kube-api-access-fblgj)
+2024-01-19 19:43:49,173 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/1e9fbbd9-7287-4f37-ae1e-e8003abcad76/volumes/kubernetes.io~projected/kube-api-access-l8gqt)
+2024-01-19 19:43:49,361 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/kubelet/pods/5ed757b0-29de-4e40-b5ae-2ac40de993bd/volumes/kubernetes.io~projected/kube-api-access-5zd5t)
+2024-01-19 19:43:49,366 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/kubelet/pods/95aa65ce-490b-4250-a683-49872f6f411f/volumes/kubernetes.io~projected/kube-api-access-qsdvq)
+2024-01-19 19:43:49,373 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/ceab6510-5996-4745-b409-24680c6f85b3/volumes/kubernetes.io~projected/kube-api-access-llshz)
+2024-01-19 19:43:49,384 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/f2356370-b7d0-4990-bd29-b8d60db490c5/volumes/kubernetes.io~projected/kube-api-access-9f4h4)
+2024-01-19 19:43:49,392 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/kubelet/pods/07406d35-c39e-4f8d-8b41-490b71c53d6d/volumes/kubernetes.io~projected/kube-api-access-5d8c4)
+2024-01-19 19:43:49,574 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/ceab6510-5996-4745-b409-24680c6f85b3/volumes/kubernetes.io~secret/longhorn-grpc-tls)
+2024-01-19 19:43:49,583 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/17bac8a9-b7c3-46be-90ee-3820551da09d/volumes/kubernetes.io~projected/kube-api-access-77ldq)
+2024-01-19 19:43:49,597 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/f24fff8f-9e79-447d-b8f1-b6eaa94a9b1d/volumes/kubernetes.io~projected/kube-api-access-2m2l5)
+2024-01-19 19:43:49,694 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/kubelet/pods/849c5fff-f185-40ca-9e0c-6918215b79fb/volumes/kubernetes.io~projected/kube-api-access-97j29)
+2024-01-19 19:43:49,863 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/1c9ffe0e-e17b-4ee6-8a7f-a9f6904fc354/volumes/kubernetes.io~projected/kube-api-access-gfrj6)
+2024-01-19 19:43:49,876 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/f3c326e6-61de-463f-9cee-a82f70fde3a5/volumes/kubernetes.io~projected/kube-api-access-hcr56)
+2024-01-19 19:43:49,884 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/461f3f6c-c52b-4ca4-9d71-8351c65cb0da/volumes/kubernetes.io~projected/kube-api-access-sxvw6)
+2024-01-19 19:43:49,911 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/kubelet/pods/ff4e128b-17a6-4856-8456-5d725847b796/volumes/kubernetes.io~projected/kube-api-access-mb498)
+2024-01-19 19:43:50,073 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/1c9ffe0e-e17b-4ee6-8a7f-a9f6904fc354/volumes/kubernetes.io~secret/argocd-dex-server-tls)
+2024-01-19 19:43:50,078 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/fe0725f5-ad49-48b3-9fb6-076bc5a0d7db/volumes/kubernetes.io~projected/kube-api-access-mwdrr)
+2024-01-19 19:43:50,109 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/bc7cf59f-1f5e-4277-aa25-efd0273f3e48/volumes/kubernetes.io~projected/kube-api-access-rkzdx)
+2024-01-19 19:43:50,118 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/kubelet/pods/1e5aebbb-cb93-4fee-a637-50a41c338734/volumes/kubernetes.io~projected/kube-api-access-4l7k4)
+2024-01-19 19:43:50,276 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/1c9ffe0e-e17b-4ee6-8a7f-a9f6904fc354/volumes/kubernetes.io~secret/argocd-repo-server-tls)
+2024-01-19 19:43:50,282 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/102738b2-36d0-4f0a-a99e-38945164976c/volumes/kubernetes.io~projected/kube-api-access-zwcvj)
+2024-01-19 19:43:50,417 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/461f3f6c-c52b-4ca4-9d71-8351c65cb0da/volumes/kubernetes.io~secret/longhorn-grpc-tls)
+2024-01-19 19:43:50,470 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/7c3f6e84-aa7f-40cc-8caa-6669391ae423/volumes/kubernetes.io~projected/kube-api-access-hcjd2)
+2024-01-19 19:43:50,474 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/a0f02bec-7b83-4c52-9315-5a1ee7477d31/volumes/kubernetes.io~projected/kube-api-access-7w7xp)
+2024-01-19 19:43:50,636 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/0c208fe2-f8cc-460f-881d-d9c656494708/volumes/kubernetes.io~secret/argocd-repo-server-tls)
+2024-01-19 19:43:50,751 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/a0f02bec-7b83-4c52-9315-5a1ee7477d31/volumes/kubernetes.io~secret/longhorn-grpc-tls)
+2024-01-19 19:43:50,755 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/18e72311-60e2-4cc7-8057-4fa2a5c84d82/volumes/kubernetes.io~secret/argocd-repo-server-tls)
+2024-01-19 19:43:50,950 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/826c6794-4626-4816-a108-0269a60217ca/volumes/kubernetes.io~secret/argocd-repo-server-tls)
+2024-01-19 19:43:50,965 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/d178becc-49b6-41a5-a3b7-0e5e5887d3a5/volumes/kubernetes.io~projected/kube-api-access-t65mg)
+2024-01-19 19:43:50,968 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/d5423b8a-fc77-4261-a77b-33afffafc9be/volumes/kubernetes.io~projected/kube-api-access-7748x)
+2024-01-19 19:43:51,187 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/d178becc-49b6-41a5-a3b7-0e5e5887d3a5/volumes/kubernetes.io~secret/argocd-repo-server-tls)
+2024-01-19 19:43:51,190 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/0c208fe2-f8cc-460f-881d-d9c656494708/volumes/kubernetes.io~projected/kube-api-access-bn78p)
+2024-01-19 19:43:51,193 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/d5423b8a-fc77-4261-a77b-33afffafc9be/volumes/kubernetes.io~secret/argocd-repo-server-tls)
+2024-01-19 19:43:51,462 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/6e908924-6f68-4fc3-9e32-958e33f08c4b/volumes/kubernetes.io~projected/kube-api-access-mnr47)
+2024-01-19 19:43:51,465 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/527bf8a3-0600-45f9-8bed-03e9bfdeaa61/volumes/kubernetes.io~projected/kube-api-access-zzh4x)
+2024-01-19 19:43:51,471 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/f002e7c1-03d0-4069-b3f0-fbdca3198fda/volumes/kubernetes.io~projected/kube-api-access-qhwkv)
+2024-01-19 19:43:51,669 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet/pods/f32853ab-aa4f-4953-9fb0-cfabf80a2b70/volumes/kubernetes.io~projected/kube-api-access-cxkbl)
+2024-01-19 19:43:51,674 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/9765ab7b-021f-4261-bf3e-87d8ff104d5c/volumes/kubernetes.io~projected/kube-api-access-vghfn)
+2024-01-19 19:43:51,685 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/0c208fe2-f8cc-460f-881d-d9c656494708/volumes/kubernetes.io~secret/argocd-dex-server-tls)
+2024-01-19 19:43:51,962 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/b59ffa0b-358a-4230-99d4-de88a3d373cf/volumes/kubernetes.io~projected/kube-api-access-prp2x)
+2024-01-19 19:43:51,993 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/f1ea9319-f3a6-4924-9538-95593ab12e56/volumes/kubernetes.io~projected/kube-api-access-f97cr)
+2024-01-19 19:43:52,191 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/b59ffa0b-358a-4230-99d4-de88a3d373cf/volumes/kubernetes.io~secret/argocd-dex-server-tls)
+2024-01-19 19:43:52,211 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/04799008-1c70-4d05-a0e1-7a2e58e34da0/volumes/kubernetes.io~projected/kube-api-access-vpfst)
+2024-01-19 19:43:52,509 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/9765ab7b-021f-4261-bf3e-87d8ff104d5c/volumes/kubernetes.io~secret/argocd-repo-server-tls)
+2024-01-19 19:43:52,517 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet/pods/a2bc79b4-959c-4d75-839d-f658da17d541/volumes/kubernetes.io~projected/kube-api-access-4w2zr)
+2024-01-19 19:43:52,728 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/6951496e-cbfa-487c-85a3-cdf2852b9ab6/volumes/kubernetes.io~projected/kube-api-access-gckxq)
+2024-01-19 19:43:53,024 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet/pods/9fe945ad-8d3b-4f38-8cfd-87497b8187d9/volumes/kubernetes.io~projected/kube-api-access-lh7m2)
+2024-01-19 19:43:53,045 p=11631 u=tannerru n=ansible | TASK [reset : Get the list of mounted filesystems] ************************************************************************************
+2024-01-19 19:43:53,045 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:53 -0600 (0:00:04.171)       0:00:21.285 ******** 
+2024-01-19 19:43:53,274 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:43:53,372 p=11631 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:43:53,372 p=11631 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:43:53,372 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:43:53,372 p=11631 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:43:53,549 p=11631 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:43:53,558 p=11631 u=tannerru n=ansible | TASK [reset : Umount filesystem] ******************************************************************************************************
+2024-01-19 19:43:53,558 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:53 -0600 (0:00:00.513)       0:00:21.798 ******** 
+2024-01-19 19:43:53,601 p=11631 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:43:53,609 p=11631 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:43:53,801 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/netns/cni-401c2fe4-be8f-4cf2-5528-58c0967114b3)
+2024-01-19 19:43:53,907 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-5defca18-85b9-710e-446e-15e2f23c3714)
+2024-01-19 19:43:53,908 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-ddb55940-635f-000d-6baf-8287abf43546)
+2024-01-19 19:43:53,909 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/netns/cni-3b3b3c55-9c3a-6649-d2d0-ac5645f3b878)
+2024-01-19 19:43:54,091 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/netns/cni-783f6146-9e16-e87b-2d43-f961bb25b06b)
+2024-01-19 19:43:54,097 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-81c409e1-92bc-e061-ef5e-61c162370699)
+2024-01-19 19:43:54,101 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/netns/cni-0b2d7e80-6d1f-bf34-2c40-f181a4b8b2d1)
+2024-01-19 19:43:54,110 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-821534f0-9a31-3abd-7f7c-9cd8e0d2322e)
+2024-01-19 19:43:54,300 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-985a6675-c780-ae44-7b04-49a2eba3e4cc)
+2024-01-19 19:43:54,303 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/netns/cni-8e144914-25c0-25c5-5679-48cec957ed55)
+2024-01-19 19:43:54,304 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/netns/cni-66923cb4-8727-c241-473a-1c34dd9aad37)
+2024-01-19 19:43:54,415 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-d752f362-d043-94a2-0b6a-a479385cd936)
+2024-01-19 19:43:54,600 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-aef4463c-859a-aaa0-2ac0-48bf009ff7d7)
+2024-01-19 19:43:54,603 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/netns/cni-985f02e9-9c1b-5966-494b-8975e5606dfd)
+2024-01-19 19:43:54,626 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-adc03219-61cd-471f-7e91-2146c7781d4b)
+2024-01-19 19:43:54,829 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-734218f7-7518-035f-4059-6b29ac4478a0)
+2024-01-19 19:43:54,838 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/netns/cni-4bba84f3-aea1-6151-dbcd-24f18a309b5d)
+2024-01-19 19:43:54,847 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-1b8c1c6d-90db-46db-0ac3-1a0d70b78583)
+2024-01-19 19:43:55,138 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-c9f63be8-3827-5c6f-e0aa-86ae9e51cebe)
+2024-01-19 19:43:55,141 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/netns/cni-4ea21f07-ca8d-3444-00e6-5ab81c069fb0)
+2024-01-19 19:43:55,146 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-ea8bade1-7d5c-a11b-08ae-637a74860a73)
+2024-01-19 19:43:55,348 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/netns/cni-4bd7744a-7c50-1daf-e455-245484c8e9af)
+2024-01-19 19:43:55,351 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-8054e3bf-5580-fd96-13f2-e84867616d2e)
+2024-01-19 19:43:55,372 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-e5339ef4-308b-e730-4b1c-cb68b578acd9)
+2024-01-19 19:43:55,654 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-17a696ab-e37a-edf5-5656-fbbb4927c6f6)
+2024-01-19 19:43:55,660 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-1abd756f-7608-5b8a-e418-a78bbd7a023f)
+2024-01-19 19:43:55,860 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-4ede8e6a-3b5c-9373-5f64-925bb34d9332)
+2024-01-19 19:43:55,875 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-f396ede5-d5df-b51f-0845-132cc9a2b124)
+2024-01-19 19:43:56,064 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/netns/cni-1c935ce8-9974-4d62-2019-19b5b354b15c)
+2024-01-19 19:43:56,185 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/netns/cni-6a617019-c660-cd84-0c55-a2c6aa277b60)
+2024-01-19 19:43:56,202 p=11631 u=tannerru n=ansible | TASK [reset : Get the list of mounted filesystems] ************************************************************************************
+2024-01-19 19:43:56,202 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:56 -0600 (0:00:02.643)       0:00:24.441 ******** 
+2024-01-19 19:43:56,522 p=11631 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:43:56,523 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:43:56,523 p=11631 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:43:56,523 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:43:56,523 p=11631 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:43:56,733 p=11631 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:43:56,741 p=11631 u=tannerru n=ansible | TASK [reset : Umount filesystem] ******************************************************************************************************
+2024-01-19 19:43:56,741 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:56 -0600 (0:00:00.538)       0:00:24.980 ******** 
+2024-01-19 19:43:56,774 p=11631 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:43:56,785 p=11631 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:43:56,796 p=11631 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:43:56,797 p=11631 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:43:56,803 p=11631 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:43:56,813 p=11631 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:43:56,817 p=11631 u=tannerru n=ansible | TASK [reset : Get the list of mounted filesystems] ************************************************************************************
+2024-01-19 19:43:56,817 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:56 -0600 (0:00:00.076)       0:00:25.057 ******** 
+2024-01-19 19:43:57,043 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:43:57,043 p=11631 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:43:57,043 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:43:57,052 p=11631 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:43:57,063 p=11631 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:43:57,254 p=11631 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:43:57,264 p=11631 u=tannerru n=ansible | TASK [reset : Umount filesystem] ******************************************************************************************************
+2024-01-19 19:43:57,264 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:57 -0600 (0:00:00.446)       0:00:25.504 ******** 
+2024-01-19 19:43:57,294 p=11631 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:43:57,303 p=11631 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:43:57,313 p=11631 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:43:57,315 p=11631 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:43:57,320 p=11631 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:43:57,330 p=11631 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:43:57,334 p=11631 u=tannerru n=ansible | TASK [reset : Get the list of mounted filesystems] ************************************************************************************
+2024-01-19 19:43:57,334 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:57 -0600 (0:00:00.069)       0:00:25.573 ******** 
+2024-01-19 19:43:57,565 p=11631 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:43:57,566 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:43:57,566 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:43:57,570 p=11631 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:43:57,577 p=11631 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:43:57,781 p=11631 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:43:57,787 p=11631 u=tannerru n=ansible | TASK [reset : Umount filesystem] ******************************************************************************************************
+2024-01-19 19:43:57,787 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:57 -0600 (0:00:00.453)       0:00:26.027 ******** 
+2024-01-19 19:43:57,817 p=11631 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:43:57,827 p=11631 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:43:57,838 p=11631 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:43:57,838 p=11631 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:43:57,844 p=11631 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:43:57,855 p=11631 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:43:57,861 p=11631 u=tannerru n=ansible | TASK [reset : Get the list of mounted filesystems] ************************************************************************************
+2024-01-19 19:43:57,861 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:57 -0600 (0:00:00.073)       0:00:26.100 ******** 
+2024-01-19 19:43:58,090 p=11631 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:43:58,091 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:43:58,092 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:43:58,092 p=11631 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:43:58,105 p=11631 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:43:58,301 p=11631 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:43:58,309 p=11631 u=tannerru n=ansible | TASK [reset : Umount filesystem] ******************************************************************************************************
+2024-01-19 19:43:58,310 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:58 -0600 (0:00:00.448)       0:00:26.549 ******** 
+2024-01-19 19:43:58,342 p=11631 u=tannerru n=ansible | skipping: [10.0.40.21]
+2024-01-19 19:43:58,354 p=11631 u=tannerru n=ansible | skipping: [10.0.40.22]
+2024-01-19 19:43:58,365 p=11631 u=tannerru n=ansible | skipping: [10.0.40.23]
+2024-01-19 19:43:58,365 p=11631 u=tannerru n=ansible | skipping: [10.0.40.31]
+2024-01-19 19:43:58,371 p=11631 u=tannerru n=ansible | skipping: [10.0.40.32]
+2024-01-19 19:43:58,381 p=11631 u=tannerru n=ansible | skipping: [10.0.40.33]
+2024-01-19 19:43:58,386 p=11631 u=tannerru n=ansible | TASK [reset : Remove service files, binaries and data] ********************************************************************************
+2024-01-19 19:43:58,386 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:43:58 -0600 (0:00:00.076)       0:00:26.626 ******** 
+2024-01-19 19:43:58,669 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/usr/local/bin/k3s)
+2024-01-19 19:43:58,670 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/usr/local/bin/k3s)
+2024-01-19 19:43:58,672 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/usr/local/bin/k3s)
+2024-01-19 19:43:58,681 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/usr/local/bin/k3s)
+2024-01-19 19:43:58,686 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/usr/local/bin/k3s)
+2024-01-19 19:43:58,852 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/etc/systemd/system/k3s.service)
+2024-01-19 19:43:58,853 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/etc/systemd/system/k3s.service)
+2024-01-19 19:43:58,854 p=11631 u=tannerru n=ansible | ok: [10.0.40.32] => (item=/etc/systemd/system/k3s.service)
+2024-01-19 19:43:58,873 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/etc/systemd/system/k3s.service)
+2024-01-19 19:43:58,890 p=11631 u=tannerru n=ansible | ok: [10.0.40.31] => (item=/etc/systemd/system/k3s.service)
+2024-01-19 19:43:59,128 p=11631 u=tannerru n=ansible | ok: [10.0.40.21] => (item=/etc/systemd/system/k3s-node.service)
+2024-01-19 19:43:59,129 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/etc/systemd/system/k3s-node.service)
+2024-01-19 19:43:59,130 p=11631 u=tannerru n=ansible | ok: [10.0.40.23] => (item=/etc/systemd/system/k3s-node.service)
+2024-01-19 19:43:59,131 p=11631 u=tannerru n=ansible | ok: [10.0.40.22] => (item=/etc/systemd/system/k3s-node.service)
+2024-01-19 19:43:59,132 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/etc/systemd/system/k3s-node.service)
+2024-01-19 19:43:59,316 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/etc/rancher/k3s)
+2024-01-19 19:43:59,318 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/etc/rancher/k3s)
+2024-01-19 19:43:59,319 p=11631 u=tannerru n=ansible | ok: [10.0.40.32] => (item=/etc/rancher/k3s)
+2024-01-19 19:43:59,325 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/etc/rancher/k3s)
+2024-01-19 19:43:59,338 p=11631 u=tannerru n=ansible | ok: [10.0.40.31] => (item=/etc/rancher/k3s)
+2024-01-19 19:43:59,500 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/k3s)
+2024-01-19 19:43:59,503 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/k3s)
+2024-01-19 19:43:59,509 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/k3s)
+2024-01-19 19:43:59,537 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/k3s)
+2024-01-19 19:43:59,553 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/k3s)
+2024-01-19 19:43:59,681 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/run/flannel)
+2024-01-19 19:43:59,687 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/run/flannel)
+2024-01-19 19:43:59,697 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/run/flannel)
+2024-01-19 19:43:59,808 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/run/flannel)
+2024-01-19 19:43:59,846 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/run/flannel)
+2024-01-19 19:43:59,861 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/etc/rancher/)
+2024-01-19 19:43:59,871 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/etc/rancher/)
+2024-01-19 19:43:59,888 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/etc/rancher/)
+2024-01-19 19:44:00,014 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/etc/rancher/)
+2024-01-19 19:44:00,056 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/kubelet)
+2024-01-19 19:44:00,063 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/kubelet)
+2024-01-19 19:44:00,071 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/etc/rancher/)
+2024-01-19 19:44:00,179 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/kubelet)
+2024-01-19 19:44:00,221 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/kubelet)
+2024-01-19 19:44:00,425 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/kubelet)
+2024-01-19 19:44:01,069 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/k3s)
+2024-01-19 19:44:01,084 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/k3s)
+2024-01-19 19:44:01,233 p=11631 u=tannerru n=ansible | changed: [10.0.40.22] => (item=/var/lib/rancher/)
+2024-01-19 19:44:01,240 p=11631 u=tannerru n=ansible | changed: [10.0.40.23] => (item=/var/lib/rancher/)
+2024-01-19 19:44:01,421 p=11631 u=tannerru n=ansible | ok: [10.0.40.22] => (item=/var/lib/cni/)
+2024-01-19 19:44:01,431 p=11631 u=tannerru n=ansible | ok: [10.0.40.23] => (item=/var/lib/cni/)
+2024-01-19 19:44:01,501 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/k3s)
+2024-01-19 19:44:01,657 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/usr/local/bin/k3s)
+2024-01-19 19:44:01,750 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/rancher/)
+2024-01-19 19:44:01,929 p=11631 u=tannerru n=ansible | ok: [10.0.40.33] => (item=/etc/systemd/system/k3s.service)
+2024-01-19 19:44:01,958 p=11631 u=tannerru n=ansible | changed: [10.0.40.21] => (item=/var/lib/cni/)
+2024-01-19 19:44:02,033 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/rancher/k3s)
+2024-01-19 19:44:02,132 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/etc/systemd/system/k3s-node.service)
+2024-01-19 19:44:02,278 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/rancher/)
+2024-01-19 19:44:02,318 p=11631 u=tannerru n=ansible | ok: [10.0.40.33] => (item=/etc/rancher/k3s)
+2024-01-19 19:44:02,472 p=11631 u=tannerru n=ansible | changed: [10.0.40.32] => (item=/var/lib/cni/)
+2024-01-19 19:44:02,511 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/rancher/k3s)
+2024-01-19 19:44:02,549 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/k3s)
+2024-01-19 19:44:02,698 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/run/flannel)
+2024-01-19 19:44:02,705 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/rancher/)
+2024-01-19 19:44:02,987 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/etc/rancher/)
+2024-01-19 19:44:03,000 p=11631 u=tannerru n=ansible | changed: [10.0.40.31] => (item=/var/lib/cni/)
+2024-01-19 19:44:03,230 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/kubelet)
+2024-01-19 19:44:05,100 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/rancher/k3s)
+2024-01-19 19:44:05,258 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/rancher/)
+2024-01-19 19:44:05,472 p=11631 u=tannerru n=ansible | changed: [10.0.40.33] => (item=/var/lib/cni/)
+2024-01-19 19:44:05,576 p=11631 u=tannerru n=ansible | TASK [reset : Reload daemon_reload] ***************************************************************************************************
+2024-01-19 19:44:05,576 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:44:05 -0600 (0:00:07.189)       0:00:33.816 ******** 
+2024-01-19 19:44:06,129 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:44:06,147 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:44:06,188 p=11631 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:44:06,200 p=11631 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:44:06,321 p=11631 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:44:06,817 p=11631 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:44:06,838 p=11631 u=tannerru n=ansible | TASK [reset : Remove tmp directory used for manifests] ********************************************************************************
+2024-01-19 19:44:06,838 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:44:06 -0600 (0:00:01.262)       0:00:35.078 ******** 
+2024-01-19 19:44:07,052 p=11631 u=tannerru n=ansible | ok: [10.0.40.22]
+2024-01-19 19:44:07,057 p=11631 u=tannerru n=ansible | ok: [10.0.40.21]
+2024-01-19 19:44:07,141 p=11631 u=tannerru n=ansible | ok: [10.0.40.23]
+2024-01-19 19:44:07,169 p=11631 u=tannerru n=ansible | ok: [10.0.40.32]
+2024-01-19 19:44:07,186 p=11631 u=tannerru n=ansible | ok: [10.0.40.31]
+2024-01-19 19:44:07,255 p=11631 u=tannerru n=ansible | ok: [10.0.40.33]
+2024-01-19 19:44:07,325 p=11631 u=tannerru n=ansible | TASK [Reboot and wait for node to come back up] ***************************************************************************************
+2024-01-19 19:44:07,325 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:44:07 -0600 (0:00:00.486)       0:00:35.564 ******** 
+2024-01-19 19:44:37,995 p=11631 u=tannerru n=ansible | changed: [10.0.40.23]
+2024-01-19 19:44:38,702 p=11631 u=tannerru n=ansible | changed: [10.0.40.21]
+2024-01-19 19:44:39,541 p=11631 u=tannerru n=ansible | changed: [10.0.40.22]
+2024-01-19 19:44:42,659 p=11631 u=tannerru n=ansible | changed: [10.0.40.31]
+2024-01-19 19:44:49,209 p=11631 u=tannerru n=ansible | changed: [10.0.40.32]
+2024-01-19 19:45:09,115 p=11631 u=tannerru n=ansible | changed: [10.0.40.33]
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | 10.0.40.21                 : ok=24   changed=10   unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | 10.0.40.22                 : ok=23   changed=8    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | 10.0.40.23                 : ok=23   changed=8    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | 10.0.40.31                 : ok=24   changed=10   unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | 10.0.40.32                 : ok=24   changed=10   unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | 10.0.40.33                 : ok=24   changed=10   unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | Friday 19 January 2024  19:45:09 -0600 (0:01:01.841)       0:01:37.406 ******** 
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | =============================================================================== 
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | Reboot and wait for node to come back up -------------------------------------------------------------------------------------- 61.84s
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | reset : Umount filesystem ------------------------------------------------------------------------------------------------------ 9.49s
+2024-01-19 19:45:09,166 p=11631 u=tannerru n=ansible | reset : Remove service files, binaries and data -------------------------------------------------------------------------------- 7.19s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Umount filesystem ------------------------------------------------------------------------------------------------------ 4.17s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Disable services ------------------------------------------------------------------------------------------------------- 3.35s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Umount filesystem ------------------------------------------------------------------------------------------------------ 2.64s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | Gathering Facts ---------------------------------------------------------------------------------------------------------------- 2.61s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Reload daemon_reload --------------------------------------------------------------------------------------------------- 1.26s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Get the list of mounted filesystems ------------------------------------------------------------------------------------ 0.54s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Get the list of mounted filesystems ------------------------------------------------------------------------------------ 0.52s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Get the list of mounted filesystems ------------------------------------------------------------------------------------ 0.51s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Get the list of mounted filesystems ------------------------------------------------------------------------------------ 0.51s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : RUN pkill -9 -f "k3s/data/[^/]+/bin/containerd-shim-runc" -------------------------------------------------------------- 0.49s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Remove tmp directory used for manifests -------------------------------------------------------------------------------- 0.49s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Get the list of mounted filesystems ------------------------------------------------------------------------------------ 0.45s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Get the list of mounted filesystems ------------------------------------------------------------------------------------ 0.45s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Get the list of mounted filesystems ------------------------------------------------------------------------------------ 0.45s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Umount k3s filesystems ------------------------------------------------------------------------------------------------- 0.14s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Umount filesystem ------------------------------------------------------------------------------------------------------ 0.08s
+2024-01-19 19:45:09,167 p=11631 u=tannerru n=ansible | reset : Umount filesystem ------------------------------------------------------------------------------------------------------ 0.08s

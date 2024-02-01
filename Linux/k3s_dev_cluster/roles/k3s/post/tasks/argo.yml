@@ -29,7 +29,7 @@
 
 - name: Apply ArgoCD
   command: >-
-    k3s kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.8/manifests/ha/install.yaml
+    k3s kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.9.5/manifests/ha/install.yaml
   register: this
   changed_when: false
   run_once: true

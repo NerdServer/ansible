@@ -1,5 +1,4 @@
----
-k3s_version: v1.25.16+k3s4
+k3s_version: clea
 # this is the user that has ssh access to these machines
 ansible_user: root
 systemd_dir: /etc/systemd/system
@@ -9,7 +8,7 @@ system_timezone: "America/Chicago"
 
 # interface which will be used for flannel
 flannel_iface: "eth0"
-flannel_cni: "/home/{{ ansible_user }}/10-flannel.conflist"
+flannel_cni: "/{{ ansible_user }}/10-flannel.conflist"
 
 # apiserver_endpoint is virtual ip-address which will be configured on each master
 apiserver_endpoint: "10.0.40.150"
@@ -28,23 +27,12 @@ k3s_master_taint: "{{ true if groups['node'] | default([]) | length >= 1 else fa
 
 # these arguments are recommended for servers as well as agents:
 extra_args: >-
-  --node-ip={{ k3s_node_ip }}
-  --flannel-iface={{ flannel_iface }}
-  --flannel-cni-conf={{ flannel_cni }}
-
+  --node-ip={{ k3s_node_ip }} --flannel-iface={{ flannel_iface }} --flannel-cni-conf={{ flannel_cni }} #magic___^_^___line
 # change these to your liking, the only required are: --disable servicelb, --tls-san {{ apiserver_endpoint }}
 extra_server_args: >-
-  {{ extra_args }}
-  --tls-san {{ apiserver_endpoint }}
-  --disable servicelb
-  --disable traefik
-  {{ '--node-taint node-role.kubernetes.io/master=true:NoSchedule' if k3s_master_taint else '' }}
-
+  {{ extra_args }} --tls-san {{ apiserver_endpoint }} --disable servicelb --disable traefik {{ '--node-taint node-role.kubernetes.io/master=true:NoSchedule' if k3s_master_taint else '' }} #magic___^_^___line
 extra_agent_args: >-
-  {{ extra_args }}
-
-
-
+  {{ extra_args }} #magic___^_^___line #magic___^_^___line #magic___^_^___line
 #IP/hostname for NAS to use for NFS mounts
 truenas: "10.0.50.4"
 
