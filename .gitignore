@@ -1,0 +1,2 @@
+# Ignore .DS_Store files (MacOS specific hidden files)
+.DS_Store
